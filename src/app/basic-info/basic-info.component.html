@@ -1,0 +1,75 @@
+<title>Sign In</title>
+<mat-card class="registerBody">
+  <div>
+    <div>
+        <img
+          src="../../assets/logoGoogle.png"
+          alt=""
+          srcset=""
+          height="70"
+          width="65"
+          style="margin-bottom: 10px;"
+        />
+      </div>
+    <div style="display: flex; justify-content: space-between">
+      <div>
+        <div>
+          <h1 style="font-family: sans-serif; font-size: 2.5rem; font-weight: '400'; padding-left: 10px;">
+            <p> Basic Information</p> 
+          </h1>
+          <h2 style="font-weight: 400; font-size: 1rem; margin-left: 10px;">Enter your birthday and gender</h2>
+        </div>
+      </div>
+      <div>
+        <form action="submit">
+          <p>
+            <mat-form-field>
+              <mat-label>Choose a date</mat-label>
+              <input matInput [matDatepicker]="picker">
+              <mat-hint>MM/DD/YYYY</mat-hint>
+              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>            
+          </p>
+          <p>
+            <mat-form-field class="genderr" appearance="fill">
+              <mat-select [value]="'en-US'">
+                <mat-option class="opt" value="en-US">Gender</mat-option>
+                <mat-option class="opt" value="fr">Male</mat-option>
+                <mat-option class="opt" value="de">Female</mat-option>
+                <mat-option class="opt" value="it">Rather not to say</mat-option>
+                <mat-option class="opt" value="es">Customise</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </p>
+          <div class="" style="display: flex; justify-content: end; text-align: center; font-weight: 400;">
+            <a [routerLink]="['/password']" style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;">
+                <span>Next</span> 
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</mat-card>
+<div style="display: flex; justify-content: space-between; margin: 30px 220px 100px 220px">
+  <div>
+    <mat-form-field class="btm" appearance="fill">
+      <mat-select [value]="'en-US'">
+        <mat-option class="opt" value="en-US">English(US)</mat-option>
+        <mat-option class="opt" value="fr">French</mat-option>
+        <mat-option class="opt" value="de">German</mat-option>
+        <mat-option class="opt" value="it">Italian</mat-option>
+        <mat-option class="opt" value="es">Spanish</mat-option>
+        <mat-option class="opt" value="pt">Portuguese</mat-option>
+        <mat-option class="opt" value="ja">Japanese</mat-option>
+        <mat-option class="opt" value="ko">Korean</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div>
+    <span class="button1">Help</span>
+    <span class="button2" style="margin: 40px;">Privacy</span>
+    <span class="button3">Terms</span>
+  </div>
+</div>

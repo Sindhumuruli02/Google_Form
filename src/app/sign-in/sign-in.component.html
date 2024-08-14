@@ -1,0 +1,65 @@
+<title>Sign In</title>
+<mat-card class="registerBody">
+  <div>
+    <div>
+        <img
+          src="../../assets/logoGoogle.png"
+          alt=""
+          srcset=""
+          height="70"
+          width="65"
+          style="margin-bottom: 10px;"
+        />
+      </div>
+    <div style="display: flex; justify-content: space-between">
+      <div>
+        <div>
+          <h1 style="font-family: sans-serif; font-size: 2rem; font-weight: '400'; padding-left: 10px;">
+            <p>How you'll sign in </p> 
+          </h1>
+          <h2 style="font-weight: 400; font-size: 0.9rem; margin-left: 10px;">Create a Gmail address for signing in to your Google Account</h2>
+        </div>
+      </div>
+      <div>
+        <form action="submit">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Username</mat-label>
+              <input matInput placeholder="abc@gmail.com" />
+            </mat-form-field>
+          </p>
+          <p>You can use letters, numbers & periods
+          </p>
+          <div class="" style="display: flex; justify-content: end; text-align: center; font-weight: 400;">
+            <a [routerLink]="['/register']"  style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;">
+              <!-- <mat-icon>favorit</mat-icon> -->
+                <span  >Next</span>
+             
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</mat-card>
+<div style="display: flex; justify-content: space-between; margin: 30px 220px 100px 220px">
+  <div>
+    <mat-form-field class="btm" appearance="fill">
+      <mat-select [value]="'en-US'">
+        <mat-option class="opt" value="en-US">English(US)</mat-option>
+        <mat-option class="opt" value="fr">French</mat-option>
+        <mat-option class="opt" value="de">German</mat-option>
+        <mat-option class="opt" value="it">Italian</mat-option>
+        <mat-option class="opt" value="es">Spanish</mat-option>
+        <mat-option class="opt" value="pt">Portuguese</mat-option>
+        <mat-option class="opt" value="ja">Japanese</mat-option>
+        <mat-option class="opt" value="ko">Korean</mat-option>
+      </mat-select>
+    </mat-form-field>
+   </div>
+  <div>
+    <span class="button1">Help</span>
+    <span class="button2" style="margin: 40px;">Privacy</span>
+    <span class="button3">Terms</span>
+  </div>
+</div>

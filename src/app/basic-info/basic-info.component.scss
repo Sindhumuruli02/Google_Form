@@ -1,0 +1,58 @@
+
+.registerBody{
+    background-color: rgb(255, 255, 255);
+    margin: 60px 200px 10px 200px;
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+
+.button1 {
+    font-size:12px !important;
+    color: #1f1f1f !important;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+  
+  .button1:hover {
+    background-color: rgb(231, 229, 229);
+
+  }
+
+.button2 {
+    font-size:12px !important;
+    color: #1f1f1f !important;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color:transparent ;
+}
+  
+.button2:hover {
+    background-color: rgb(231, 229, 229);
+
+}
+
+.button3 {
+    font-size:12px !important;
+    color: #1f1f1f !important;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+  
+.button3:hover {
+    background-color: rgb(231, 229, 229);
+
+}
+mat-form-field{
+    width:400px;
+}
+.btm{
+    height:2px;
+    align-items: center;
+    // background-color: #F0F4F9;
+    width:140px;
+ }
